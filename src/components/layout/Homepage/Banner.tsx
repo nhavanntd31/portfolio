@@ -21,7 +21,7 @@ export default function Banner() {
           </div>
 
           <h1 className="leading-tight text-center" style={{ fontFamily: urbanist.style.fontFamily, fontWeight: 600, lineHeight: '95.57px', wordWrap: 'break-word' }}>
-            <span style={{ color: '#329A1F', fontSize: '95.57px' }}>I'm </span>
+            <span style={{ color: '#329A1F', fontSize: '95.57px' }}>I&apos;m </span>
             <span style={{ color: '#4CB5F0', fontSize: '95.57px' }}>Doris Do,</span>
             <br />
             <span style={{ color: '#329A1F', fontSize: '95.57px' }} className="text-[#329A1F] font-size-10">Global Entrepreneurship</span>
@@ -44,7 +44,7 @@ export default function Banner() {
               </svg>
               
               <p style={{ color: '#344054', fontSize: 20, fontFamily: 'Urbanist', fontWeight: '500', wordWrap: 'break-word' }}>
-                Jenny's Exceptional product design ensure our website's success.
+                Jenny&apos;s Exceptional product design ensure our website&apos;s success.
                 Highly Recommended
               </p>
             </div>

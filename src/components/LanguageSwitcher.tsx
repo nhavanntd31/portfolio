@@ -49,10 +49,10 @@ const LanguageSwitcher = () => {
     router.refresh();
   };
 
-  const languageLabels = {
-    en: "English",
-    vie: "Tiếng Việt",
-  };
+  // const languageLabels = {
+  //   en: "English",
+  //   vie: "Tiếng Việt",
+  // };
 
   return (
     <DropdownMenu>
