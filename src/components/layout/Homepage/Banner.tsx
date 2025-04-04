@@ -17,7 +17,7 @@ export default function Banner() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="relative">
           <div className="flex justify-center mb-4">
-            <Button className="bg-[#7C9971] text-[#F6EDD9] mt-4 px-8 py-8 rounded-full text-[30px]">Hello!</Button>
+            <Button className="bg-gradient-to-r from-[#7C9971] to-[#95B788] text-[#F6EDD9] mt-4 px-8 py-8 rounded-full text-[30px] font-medium shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:from-[#95B788] hover:to-[#7C9971]">Hello!</Button>
           </div>
 
           <h1 className="leading-tight text-center" style={{ fontFamily: urbanist.style.fontFamily, fontWeight: 600, lineHeight: '95.57px', wordWrap: 'break-word' }}>
@@ -32,7 +32,7 @@ export default function Banner() {
             <Image
               src={MentorImage}
               alt="Doris Do - Global Entrepreneur"
-              className="relative z-10 w-[85%]"
+              className="relative z-10 w-[85%] transition-all duration-500 hover:scale-105"
             />
           </div>
 
@@ -43,7 +43,7 @@ export default function Banner() {
                 <path d="M28.365 17.445H21.33C21.45 10.44 22.83 9.285 27.135 6.735C27.63 6.435 27.795 5.805 27.495 5.295C27.195 4.8 26.565 4.635 26.055 4.935C20.985 7.935 19.215 9.765 19.215 18.495V26.58C19.215 29.145 21.3 31.215 23.85 31.215H28.35C30.99 31.215 32.985 29.22 32.985 26.58V22.08C33 19.44 31.005 17.445 28.365 17.445Z" fill="#344054"/>
               </svg>
               
-              <p style={{ color: '#344054', fontSize: 20, fontFamily: 'Urbanist', fontWeight: '500', wordWrap: 'break-word' }}>
+              <p style={{ color: '#344054', fontSize: 20, fontFamily: 'Urbanist', fontWeight: '500', wordWrap: 'break-word' }} className="transition-all duration-300 hover:text-[#4CB5F0] hover:scale-105 transform cursor-pointer">
                 Jenny&apos;s Exceptional product design ensure our website&apos;s success.
                 Highly Recommended
               </p>

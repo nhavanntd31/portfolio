@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Menu } from "lucide-react"
-import { Urbanist } from 'next/font/google';
+import { Urbanist } from 'next/font/google'
+import { usePathname } from 'next/navigation'
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -16,6 +17,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [opacity, setOpacity] = useState(1)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,27 +49,27 @@ export default function Header() {
 
         <ul className="hidden md:flex items-center justify-between w-full px-4 space-x-8">
           <li>
-            <Link href="/" className="bg-[#329A1F] text-[#F3FCF0] px-8 py-4 rounded-full font-medium" style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+            <Link href="/" className={`${pathname === '/' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="text-[#F3FCF0] hover:text-gray-300 transition-colors" style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+            <Link href="/about" className={`${pathname === '/about' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
               About
             </Link>
           </li>
           <li>
-            <Link href="/work" className="text-[#F3FCF0] hover:text-gray-300 transition-colors" style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+            <Link href="/work" className={`${pathname === '/work' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
               My Work
             </Link>
           </li>
           <li>
-            <Link href="/blog" className="text-[#F3FCF0] hover:text-gray-300 transition-colors" style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+            <Link href="/blog" className={`${pathname === '/blog' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
               Blog
             </Link>
           </li>
           <li>
-            <Link href="/social" className="text-[#F3FCF0] hover:text-gray-300 transition-colors" style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+            <Link href="/social" className={`${pathname === '/social' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
               Social Media
             </Link>
           </li>
@@ -79,7 +81,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="bg-[#329A1F] text-[#F3FCF0] px-4 py-2 rounded-full block text-center font-medium"
+                  className={`${pathname === '/' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-4 py-2 rounded-full block text-center font-medium hover:bg-[#40c026] transition-all duration-500`}
                   style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -89,7 +91,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
-                  className="text-[#F3FCF0] hover:text-gray-300 transition-colors block text-center"
+                  className={`${pathname === '/about' ? 'bg-[#329A1F] px-4 py-2 rounded-full' : ''} text-[#F3FCF0] hover:text-[#329A1F] transition-all duration-500 block text-center`}
                   style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -99,7 +101,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/work"
-                  className="text-[#F3FCF0] hover:text-gray-300 transition-colors block text-center"
+                  className={`${pathname === '/work' ? 'bg-[#329A1F] px-4 py-2 rounded-full' : ''} text-[#F3FCF0] hover:text-[#329A1F] transition-all duration-500 block text-center`}
                   style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -109,7 +111,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-[#F3FCF0] hover:text-gray-300 transition-colors block text-center"
+                  className={`${pathname === '/blog' ? 'bg-[#329A1F] px-4 py-2 rounded-full' : ''} text-[#F3FCF0] hover:text-[#329A1F] transition-all duration-500 block text-center`}
                   style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -119,7 +121,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-[#F3FCF0] hover:text-gray-300 transition-colors block text-center"
+                  className={`${pathname === '/contact' ? 'bg-[#329A1F] px-4 py-2 rounded-full' : ''} text-[#F3FCF0] hover:text-[#329A1F] transition-all duration-500 block text-center`}
                   style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}
                   onClick={() => setIsMenuOpen(false)}
                 >
