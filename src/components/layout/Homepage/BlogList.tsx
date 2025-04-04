@@ -36,7 +36,7 @@ const BlogCard = ({ image, category, author, date, title }: BlogCardProps) => (
       <span className="text-sm text-[#344054]">{author}</span>
       <span className="text-sm text-[#344054]">{date}</span>
     </div>
-    <h3 className="text-xl font-medium mb-2 group-hover:text-[#FD853A] transition-colors duration-300">
+    <h3 className="text-xl font-medium mb-2 text-[#344054] group-hover:text-[#FD853A] transition-colors duration-300">
       {title}
     </h3>
   </div>
@@ -71,7 +71,7 @@ export default function BlogList() {
     <div className="max-w-screen-xl mx-auto px-4 py-16">
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-4xl font-semibold" style={{ fontFamily: urbanist.style.fontFamily }}>
-          <span>Blog</span>
+          <span className="text-[#344054]">Blog</span>
         </h2>
         <Button className="bg-[#FD853A] hover:bg-[#FF9B5C] text-white px-6 py-6 rounded-full font-medium hover:scale-105 hover:shadow-lg">
           See All

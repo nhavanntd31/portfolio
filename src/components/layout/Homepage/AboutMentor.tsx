@@ -39,8 +39,8 @@ export const FocusCard = ({ title, image, description }: { title: string, image:
         backgroundRepeat: "no-repeat",
       }}
     />
-    <h3 className="text-2xl font-semibold mb-2 transition-all duration-300 group-hover:text-[#FD853A]" style={{ fontFamily: urbanist.style.fontFamily }}>{title}</h3>
-    <p className="text-center text-gray-600 transition-all duration-300 group-hover:text-gray-900" style={{ fontFamily: urbanist.style.fontFamily }}>{description}</p>
+    <h3 className="text-2xl font-semibold mb-2 transition-all duration-300 text-[#344054] group-hover:text-[#FD853A]" style={{ fontFamily: urbanist.style.fontFamily }}>{title}</h3>
+    <p className="text-center text-gray-600 transition-all duration-300 text-[#344054] group-hover:text-gray-900" style={{ fontFamily: urbanist.style.fontFamily }}>{description}</p>
   </div>
 );
 
