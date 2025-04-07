@@ -2,15 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 import dbConnect from '@/lib/mongodb';
 import { Blog } from '@/app/service/blog';
-export enum BlogType {
-    BLOG = 'blog',
-    SPEAKING = 'speaking',
-    SOCIAL = 'social',
-    UPGREEN = 'upgreen',
-    GLOBAL = 'global',
-    EDUCATION = 'education',
-  }
-  
+import { BlogType } from '@/app/service/blog';
 
 export async function GET(request: NextRequest) {
   await dbConnect();

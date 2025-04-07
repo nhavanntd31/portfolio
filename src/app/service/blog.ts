@@ -10,3 +10,11 @@ export const BlogSchema = new mongoose.Schema({
 });
 
 export const Blog = mongoose.models.Blog || mongoose.model('Blog', BlogSchema);
+export enum BlogType {
+  BLOG = 'blog',
+  SPEAKING = 'speaking',
+  SOCIAL = 'social',
+  UPGREEN = 'upgreen',
+  GLOBAL = 'global',
+  EDUCATION = 'education',
+}
