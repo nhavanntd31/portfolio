@@ -11,15 +11,14 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center">
-                <span className="text-white font-bold">JC</span>
-              </div>
-              <span className="text-xl font-bold">JCREA</span>
+              {/* <div className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center"> */}
+                {/* <span className="text-white font-bold">DD</span> */}
+              {/* </div> */}
+              <span className="text-xl font-bold">DORIS DO</span>
             </div>
 
             <p className="text-gray-300 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+            Welcome to my world! Insights and inspiration from my journey in sustainability, storytelling, and global education.
             </p>
 
             <div className="flex gap-4">
@@ -45,51 +44,22 @@ export default function Footer() {
           {/* Navigation and Contact */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Navigation */}
-            <div>
-              <h3 className="text-orange-500 font-medium mb-4">Navigation</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/" className="text-gray-300 hover:text-white text-sm">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-gray-300 hover:text-white text-sm">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/service" className="text-gray-300 hover:text-white text-sm">
-                    Service
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/resume" className="text-gray-300 hover:text-white text-sm">
-                    Resume
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/project" className="text-gray-300 hover:text-white text-sm">
-                    Project
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
+        
             {/* Contact */}
             <div>
               <h3 className="text-orange-500 font-medium mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li className="text-gray-300 text-sm">+91 7738443636</li>
-                <li className="text-gray-300 text-sm">Jayesh1636@gmail.com</li>
-                <li className="text-gray-300 text-sm">Portfolio-jcrea.com</li>
+                <li className="text-gray-300 text-sm">+84 399673001</li>
+                <li className="text-gray-300 text-sm">doris.upgreen@gmail.com</li>
+                <li className="text-gray-300 text-sm">portfolio-doris.netlify.app</li>
               </ul>
             </div>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-orange-500 font-medium mb-4">Get the latest information</h3>
+            <h3 className="text-orange-500 font-medium ">Contact with me</h3>
+            <p className="text-gray-300 text-sm mb-4">Let's make a sustainable world.</p>
             <div className="flex gap-2">
               <input type="email" placeholder="Email Address" className="bg-white rounded-full px-3 py-2 text-black h-10" />
               <Button className="bg-orange-500 hover:bg-orange-600 h-10 px-3">
@@ -114,16 +84,16 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between text-xs text-gray-400">
-          <div>Copyright© 2023 Jayesh. All Rights Reserved.</div>
-          <div className="mt-2 md:mt-0">
+          {/* <div>Copyright© 2023 Jayesh. All Rights Reserved.</div> */}
+          {/* <div className="mt-2 md:mt-0">
             <Link href="/terms" className="hover:text-white">
               User Terms & Conditions
             </Link>
             {" | "}
             <Link href="/privacy" className="hover:text-white">
               Privacy Policy
-            </Link>
-          </div>
+            </Link> */}
+          {/* </div> */}
         </div>
       </div>
     </footer>

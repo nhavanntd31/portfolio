@@ -97,7 +97,8 @@ export default function ImageGallery() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <h1 className="text-5xl text-[#F3FCF0] font-bold text-center mb-6 tracking-tight">Highlight <span className="text-[#FD853A]">Achievement</span></h1>
-        <p className="text-center text-[#F3FCF0]/80 max-w-3xl mx-auto mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a elementum. Sed laoreet, consectetur adipiscing elit. Sed laorris erat, elementum egestas laorris.</p>
+        <p className="text-center text-[#F3FCF0]/80 max-w-3xl mx-auto mb-12">This is a space where I share the milestones I've reached – tangible proofs of growth, grit, and purpose.
+        Each achievement is not just a number, but a story of sustainable impact and the places, people, and progress I’ve been part of along the way.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 backdrop-blur-sm lg:grid-cols-4 gap-4 auto-rows-[200px]">
           {galleryItems.map((item) => (

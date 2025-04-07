@@ -39,7 +39,7 @@ export default function ProfileSection() {
               {/* <p className={`text-[#98A2B3] text-xs italic ${urbanist.className}`}>(from global scholarships to innovation grants)</p> */}
             </div>
             <div className="transform transition-all duration-300 hover:scale-110">
-              <h2 className={`text-2xl md:text-3xl font-semibold text-[#2d3142] ${urbanist.className} animate-countUp`}>10+</h2>
+              <h2 className={`text-2xl md:text-3xl font-semibold text-[#2d3142] ${urbanist.className} animate-countUp`}>20+</h2>
               <p className={`text-[#98A2B3] w-32 text-md ${urbanist.className}`}>Countries Traveled & Collaborated</p>
               {/* <p className={`text-[#98A2B3] text-xs italic ${urbanist.className}`}>(spanning Asia, Europe, and beyond)</p> */}
             </div>

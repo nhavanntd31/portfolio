@@ -85,8 +85,8 @@ export default function AboutMentor() {
         </div>
       </section>
       <div className="flex flex-col items-center justify-center py-12 md:py-20 bg-[#F3FCF0]">
-        <div className="text-3xl sm:text-4xl font-bold text-[#344054] text-center mb-10 md:mb-16 px-4" style={{ fontFamily: urbanist.style.fontFamily }}>Design
-          <span className="text-[#FD853A]"> Focuses</span>
+        <div className="text-3xl sm:text-4xl font-bold text-[#344054] text-center mb-10 md:mb-16 px-4" style={{ fontFamily: urbanist.style.fontFamily }}>My Core
+          <span className="text-[#FD853A]"> Values</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
           <FocusCard title="Sustainability & Impact" image={BackgroundImage.src} description=" I design and lead innovative projects that tackle plastic waste, promote circular economy solutions, and raise environmental awareness. At UPGREEN Vietnam, we turn discarded plastic into beautiful, purposeful products – reconnecting people with cultural values while inspiring greener lifestyles." />

@@ -6,7 +6,7 @@ import { Urbanist } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import BlogBanner from "@/public/assets/images/blog.png";
+import BlogBanner from "@/public/assets/images/global1.png";
 import Link from "next/link";
 
 const urbanist = Urbanist({
@@ -77,11 +77,13 @@ export default function BlogPage() {
       <main className="flex-grow pt-32">
         <div className="max-w-screen-xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-[#329A1F] mb-6">Global Connector</h1>
+            <h1 className="text-5xl font-bold text-[#329A1F] mb-6">Global Connector and 
+              <span className="text-blue-400"> Changemaker</span>
+            </h1>
             <p className="text-[#344054] max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, 
-              bibendum sodales lorem. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+            As a global connector, I represent the voice of Vietnamese youth on international stages – from policy dialogues to innovation forums.
+Through fellowships, partnerships, and global networks, I work to bridge local action with global impact – building cross-border collaborations in sustainability, education, and social innovation.
+Because meaningful change knows no borders.
             </p>
           </div>
           
@@ -94,12 +96,13 @@ export default function BlogPage() {
             <div className="absolute inset-0 bg-black/30"></div>
             <div className="absolute bottom-0 left-0 w-full p-8">
               <h2 className="text-white text-3xl font-bold mb-2">Latest Articles & News</h2>
-              <p className="text-white/80">Discover our thoughts on design, technology, and sustainability</p>
+              <p className="text-white/80">Discover my thoughts on sustainability, education, and creativity</p>
             </div>
           </div>
           <h2 className="text-4xl font-semibold mb-12" style={{ fontFamily: urbanist.style.fontFamily }}>
-          <span className="text-[#344054]">Post</span>
-        </h2>
+          <span className="text-[#344054]">My</span>
+            <span className="text-blue-400"> Journey</span>
+          </h2>
           {isLoading ? (
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#329A1F]"></div>

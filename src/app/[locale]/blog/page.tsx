@@ -6,7 +6,7 @@ import { Urbanist } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import BlogBanner from "@/public/assets/images/blog.png";
+import BlogBanner from "@/public/assets/images/flag.png";
 import Link from "next/link";
 
 const urbanist = Urbanist({
@@ -77,29 +77,35 @@ export default function BlogPage() {
       <main className="flex-grow pt-32">
         <div className="max-w-screen-xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-[#329A1F] mb-6">Our Blog</h1>
-            <p className="text-[#344054] max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, 
-              bibendum sodales lorem. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit. Sed lobortis orci elementum egestas lobortis.
-            </p>
+     
           </div>
           
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden mb-16">
-            <img 
-              src={BlogBanner.src}
-              alt="Blog Banner"
-              className="object-cover w-full h-full"
-            />
-            <div className="absolute inset-0 bg-black/30"></div>
-            <div className="absolute bottom-0 left-0 w-full p-8">
-              <h2 className="text-white text-3xl font-bold mb-2">Latest Articles & News</h2>
-              <p className="text-white/80">Discover our thoughts on design, technology, and sustainability</p>
+          <div className="flex flex-col md:flex-row gap-8 mb-16">
+            <div className="relative w-full md:w-1/2 h-[600px] rounded-2xl overflow-hidden">
+              <img 
+                src={BlogBanner.src}
+                alt="Blog Banner"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute inset-0 bg-black/30"></div>
+              <div className="absolute bottom-0 left-0 w-full p-8">
+                <h2 className="text-white text-3xl font-bold mb-2">Latest Articles & News</h2>
+                <p className="text-white/80">Discover my thoughts on sustainability, education, and creativity</p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 h-full flex items-center">
+              <div>
+                <h2 className="text-4xl font-semibold mb-6" style={{ fontFamily: urbanist.style.fontFamily }}>
+                  <span className="text-[#344054]">Blog</span>
+                </h2>
+                <p className="text-[#344054]">Welcome to my blog – a space where I share the <span className="text-[#329A1F] font-semibold">stories</span>, <span className="text-[#FD853A] font-semibold">lessons</span>, and <span className="text-[#4CB5F0] font-semibold">moments</span> that have shaped my journey as a changemaker.</p>
+                <p className="text-[#344054] mt-4">Here, you'll find reflections on <span className="text-[#329A1F] font-semibold">sustainability</span>, <span className="text-[#329A1F] font-semibold">circular economy</span>, <span className="text-[#4CB5F0] font-semibold">creative storytelling</span>, and <span className="text-[#FD853A] font-semibold">youth empowerment</span>. From launching <span className="text-[#329A1F] font-semibold">UPGREEN VIETNAM</span> to mentoring students through <span className="text-[#329A1F] font-semibold">APPYSIS</span>, I write about the real work behind building impact-driven projects.</p>
+                <p className="text-[#344054] mt-4">Whether it's behind-the-scenes from public speaking, insights on working with communities, or tips for young people applying for scholarships – this space is all about <span className="text-[#329A1F] font-semibold">learning</span>, <span className="text-[#4CB5F0] font-semibold">growing</span>, and <span className="text-[#FD853A] font-semibold">creating change</span> together.</p>
+                <p className="text-[#344054] mt-4">Because I believe stories don't just inspire – they <span className="text-[#FD853A] font-semibold">ignite action</span>. And that's where change begins.</p>
+              </div>
             </div>
           </div>
-          <h2 className="text-4xl font-semibold mb-12" style={{ fontFamily: urbanist.style.fontFamily }}>
-          <span className="text-[#344054]">Blog</span>
-        </h2>
+          Post
           {isLoading ? (
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#329A1F]"></div>

@@ -4,9 +4,9 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Urbanist } from "next/font/google"
 import { motion, AnimatePresence } from "motion/react"
-import Arboard from "@/public/assets/images/arboard.png"
-import Italia from "@/public/assets/images/italia.png"
-import Background from "@/public/assets/images/back-1.png"
+import Arboard from "@/public/assets/images/upgreen.png"
+import Italia from "@/public/assets/images/slide3.png"
+import Background from "@/public/assets/images/global.png"
 
 const urbanist = Urbanist({
   subsets: ["latin"],

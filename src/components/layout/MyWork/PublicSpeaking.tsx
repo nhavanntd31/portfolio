@@ -10,6 +10,7 @@ import { BlogCard } from "../Homepage/BlogList";
 import ContactForm from "../Homepage/ContactForm";
 import ImageSlider from "./ImageSlider";
 import Link from "next/link";
+import GlobalBack from "@/public/assets/images/global2.png"
 import UpgreenBack from "@/public/assets/images/upgreen.png"
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -174,9 +175,9 @@ export default function PublicSpeaking() {
         </div>
       </section>
       <div className="max-w-screen-xl mx-auto px-4 py-16">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-4xl font-semibold">
-          <span className="text-[#344054]">Social Projects that Make a Difference</span>
+      <div className="flex justify-between items-center  mb-4">
+        <h2 className="text-4xl font-semibold w-1/2">
+          <span className="text-[#344054]">Social <span className="text-[#FD853A]">Projects</span> that Make a Difference</span>
         </h2>
    
         <Link href="/social">
@@ -186,7 +187,8 @@ export default function PublicSpeaking() {
         </Link>
       </div>
       <p className="text-gray-600 mt-2 max-w-2xl mb-8">
-          From plastic waste to community impact, I turn bold ideas into grassroots action. Each project is a story of collaboration, creativity, and care for both people and the planet.
+      I’m passionate about driving social change through sustainability.
+      From education to circular design, my projects turn purpose into action – connecting people and planet through impact-driven work.
         </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -222,8 +224,8 @@ export default function PublicSpeaking() {
               className="text-3xl sm:text-4xl md:text-5xl font-sm mb-6 transition-all duration-300 hover:scale-105"
             >
               <div className="flex flex-col">
-                <span className="text-[#329A1F] hover:text-white transition-colors duration-300">UpGreen</span>
-                <span className="text-blue-400 hover:text-white transition-colors duration-300">Vietnam</span>
+                <span className="text-[#329A1F] hover:text-white transition-colors duration-300">UPGREEN</span>
+                <span className="text-blue-400 hover:text-white transition-colors duration-300">VIETNAM</span>
               </div>
             </h2>
 
@@ -243,7 +245,9 @@ export default function PublicSpeaking() {
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-4xl font-semibold">
           <div className="flex flex-col">
-            <span className="w-2/3 text-[#344054]">Youth Empowerment Through Education</span>
+            <span className="w-2/3 text-[#344054]">Youth Empowerment 
+              <span className="text-blue-400"> Through Education</span>
+            </span>
           </div>
         </h2>
         <Link href="/education">
@@ -261,13 +265,13 @@ export default function PublicSpeaking() {
       ) : educationProject ? (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="flex flex-col w-3/4">
-            <h3 className="text-2xl font-semibold mb-12">
+            <h3 className="text-2xl font-semibold mb-2">
               {educationProject.title}
             </h3>
             <div 
-              className="text-[#98A2B3] mb-6 line-clamp-6"
+              className=" mb-6 line-clamp-6"
               dangerouslySetInnerHTML={{ 
-                __html: educationProject.content?.substring(0, 300) + '...' 
+                __html: educationProject.content?.substring(0, 10000) + '...'
               }}
             />
           </div>
@@ -303,7 +307,7 @@ export default function PublicSpeaking() {
     <div className="relative w-full h-auto min-h-[800px] mx-auto overflow-hidden rounded-[49px] my-16">
       <div className="absolute inset-0 z-0">
         <img 
-          src={Frame2.src} 
+          src={GlobalBack.src} 
           alt="Global Connector background" 
           className="w-full h-full object-cover"
         />
