@@ -3,11 +3,14 @@ import { useState } from "react"
 import Image from "next/image"
 import { Urbanist } from "next/font/google"
 import { motion } from "motion/react"
-import Background from "@/public/assets/images/back-1.png"
-import arboard from "@/public/assets/images/arboard.png"
-import italia from "@/public/assets/images/italia.png"
-import digital from "@/public/assets/images/Water.png"
-import event from "@/public/assets/images/event.png"
+import Pic1 from "@/public/assets/images/gallery/8.png"
+import Pic2 from "@/public/assets/images/gallery/9.jpg"
+import Pic3 from "@/public/assets/images/gallery/3.jpg"
+import Pic4 from "@/public/assets/images/gallery/4.jpg"
+import Pic5 from "@/public/assets/images/gallery/5.jpg"
+import Pic6 from "@/public/assets/images/gallery/6.jpg"
+import Pic7 from "@/public/assets/images/gallery/7.jpg"
+import Background from "@/public/assets/images/Water.png"
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -28,49 +31,49 @@ export default function ImageGallery() {
   const galleryItems: GalleryItemProps[] = [
     {
       id: 1,
-      image: arboard,
+      image: Pic1,
       title: "Environmental Design",
       description: "Creating sustainable solutions for a greener future through innovative design approaches.",
       size: "large"
     },
     {
       id: 2,
-      image: italia,
+      image: Pic2,
       title: "Global Projects",
       description: "Working with international teams to deliver impactful solutions across different cultures.",
       size: "medium"
     },
     {
       id: 3,
-      image: italia,
+      image: Pic3,
       title: "Recycling Initiatives",
       description: "Transforming waste into valuable resources through creative design thinking.",
       size: "small"
     },
     {
         id: 4,
-        image: italia,
+        image: Pic4,
         title: "Recycling Initiatives",
         description: "Transforming waste into valuable resources through creative design thinking.",
         size: "small"
       },
     {
       id: 5,
-      image: event,
+      image: Pic5,
       title: "Sustainable Architecture",
       description: "Designing buildings that minimize environmental impact while maximizing efficiency and comfort.",
       size: "medium"
     },
     {
       id: 6,
-      image: Background,
+      image: Pic6,
       title: "Urban Planning",
       description: "Creating livable cities through thoughtful design and community-focused development strategies.",
       size: "small"
     },
     {
       id: 7,
-      image: digital,
+      image: Pic7,
       title: "Digital Innovation",
       description: "Leveraging technology to create sustainable solutions for modern environmental challenges.",
       size: "small"
@@ -84,7 +87,7 @@ export default function ImageGallery() {
     <div className="relative py-16 px-4">
       <div className="absolute inset-0 z-0">
         <Image
-          src={digital}
+          src={Background}
           alt="Background"
           fill
           className="object-cover opacity-100"

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
-import MentorImage from "@/public/assets/images/woman1.png"
+import MentorImage from "@/public/assets/images/Doris2.png"
 import { Button } from "@/components/ui/button"
 import { Urbanist } from 'next/font/google';
 
@@ -20,11 +20,11 @@ export default function Banner() {
             <Button className="bg-gradient-to-r from-[#7C9971] to-[#95B788] text-[#F6EDD9] mt-4 px-8 py-8 rounded-full text-[30px] font-medium shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:from-[#95B788] hover:to-[#7C9971]">Hello!</Button>
           </div>
 
-          <h1 className="leading-tight text-center" style={{ fontFamily: urbanist.style.fontFamily, fontWeight: 600, lineHeight: '95.57px', wordWrap: 'break-word' }}>
+          <h1 className="leading-tight text-center" style={{ fontFamily: urbanist.style.fontFamily, fontWeight: 600, wordWrap: 'break-word' }}>
             <span style={{ color: '#329A1F', fontSize: '95.57px' }}>I&apos;m </span>
             <span style={{ color: '#4CB5F0', fontSize: '95.57px' }}>Doris Do,</span>
             <br />
-            <span style={{ color: '#329A1F', fontSize: '95.57px' }} className="text-[#329A1F] font-size-10">Global Entrepreneurship</span>
+            <span style={{ color: '#329A1F', fontSize: '40px' }} className="text-[#329A1F] font-size-2">Environmental entrepreneur and Sustainable influencer/educator</span>
           </h1>
 
           <div className="relative flex justify-center -mt-32 ">
@@ -32,7 +32,7 @@ export default function Banner() {
             <Image
               src={MentorImage}
               alt="Doris Do - Global Entrepreneur"
-              className="relative z-10 w-[85%] transition-all duration-500 hover:scale-105"
+              className="relative z-10 w-[45%] transition-all duration-500 hover:scale-105"
             />
           </div>
 
@@ -44,8 +44,7 @@ export default function Banner() {
               </svg>
               
               <p style={{ color: '#344054', fontSize: 20, fontFamily: 'Urbanist', fontWeight: '500', wordWrap: 'break-word' }} className="transition-all duration-300 hover:text-[#4CB5F0] hover:scale-105 transform cursor-pointer">
-                Jenny&apos;s Exceptional product design ensure our website&apos;s success.
-                Highly Recommended
+              Turning sustainable ideas into real-world change – through innovation, creativity, and community action.
               </p>
             </div>
           </div>

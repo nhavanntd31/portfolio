@@ -21,7 +21,7 @@ export default function ContactForm({ hasBackground = true }: ContactFormProps) 
   const [email, setEmail] = useState("")
 
   return (
-    <div className={`relative rounded-3xl w-full h-[300px] ${hasBackground ? "bg-cover bg-center" : "bg-[#f5f5f5]"}`} 
+    <div className={`relative rounded-3xl w-full h-[300px] ${hasBackground ? "bg-cover bg-center" : ""}`} 
     style={hasBackground ? {
         backgroundImage: `url(${BackgroundContact.src})`,
         backgroundSize: "cover",
@@ -32,7 +32,7 @@ export default function ContactForm({ hasBackground = true }: ContactFormProps) 
           <h2 className={`text-4xl ${hasBackground ? "text-white" : "text-gray-800"} mb-6 text-center w`} style={{ fontFamily: urbanist.style.fontFamily }}>
             Have an Awesome Project Idea? 
             <br /> 
-            <span className="text-[#4CB5F0]">
+            <span className="text-[#4CB5F0] font-bold">
               Let's Discuss
             </span>
           </h2>
@@ -43,7 +43,7 @@ export default function ContactForm({ hasBackground = true }: ContactFormProps) 
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter Email Address"
+              placeholder="Let’s collaborate to turn ideas into action – and impact that lasts."
               className={`flex-1 px-6 py-4 rounded-l-full ${hasBackground ? "text-white" : "text-black"} focus:outline-none`}
             />
             <Button className="px-5 py-5 rounded-full bg-[#7C9971] hover:bg-[#40c026] text-white font-medium flex justify-center items-center ml-12">

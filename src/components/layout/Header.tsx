@@ -69,8 +69,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/social" className={`${pathname === '/social' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
-              Social Media
+            <Link href="/contact" className={`${pathname === '/social' ? 'bg-[#329A1F]' : ''} text-[#F3FCF0] px-8 py-4 rounded-full font-medium hover:bg-[#329A1F] transition-all duration-500`} style={{ fontSize: '20px', fontFamily: urbanist.style.fontFamily }}>
+              Contact
             </Link>
           </li>
         </ul>

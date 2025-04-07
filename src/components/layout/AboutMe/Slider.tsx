@@ -27,20 +27,20 @@ export default function Slider() {
     {
       id: 1,
       image: Arboard,
-      title: "Environmental Design",
-      description: "Creating sustainable solutions for a greener future through innovative design approaches."
+      title: "Environmental Advocate",
+      description: "I don’t just talk about sustainability — I live it, build it, and grow with it. I am a sustainability enthusiast – from founding UPGREEN Vietnam with recycled plastic products to organizing recycling campaigns and spreading green living in the community. I believe that change starts with small actions, and I want to turn every creative project into a part of the environmental solution."
     },
     {
       id: 2,
       image: Italia,
-      title: "Global Projects",
-      description: "Working with international teams to deliver impactful solutions across different cultures."
+      title: "Youth Empowerment Through Education",
+      description: "Empowering the next generation to dream big, build smart, and rise global. I founded APPYSIS – a scholarship mentoring platform helping hundreds of Vietnamese youth access international scholarships. Additionally, I organize classes, workshops, and campaigns to enhance youth capabilities in sustainable development, global thinking, and building social projects from scratch."
     },
     {
       id: 3,
       image: Background,
-      title: "Recycling Initiatives",
-      description: "Transforming waste into valuable resources through creative design thinking."
+      title: "Global Connector & Changemaker",
+      description: "From Venice to Alpbach, I speak for change and collaborate for impact. I represent Vietnam in international programs like European Forum Alpbach, Youth4Ocean Forum, and global conferences. I not only connect and share environmental initiatives, but also build bridges between Vietnamese youth and the world through speaking, collaboration, and global expert networks."
     },
   ]
 
