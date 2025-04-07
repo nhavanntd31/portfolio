@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
-import { Blog } from '@/app/api/blog/route';
-
+import { Blog } from '@/app/service/blog';
 export async function GET(
   request: NextRequest,
   { params }: any
