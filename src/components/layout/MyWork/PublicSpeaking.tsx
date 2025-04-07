@@ -320,9 +320,11 @@ export default function PublicSpeaking() {
         <p className="text-white/80 text-center max-w-2xl mb-20">
           As a fellow of international programs like the European Forum Alpbach, I bring Vietnamese voices to global dialogues. I work across borders to scale solutions, co-create with changemakers worldwide, and advocate for youth participation in shaping a sustainable future.
         </p>
+        <Link href="/global">
         <button className="hover:bg-white/30 text-2xl backdrop-blur-sm border border-white/50 text-white px-10 py-6 rounded-full transition-all duration-300 hover:scale-105">
           Get in touch
         </button>
+        </Link>
       </div>
     </div>
     <ContactForm hasBackground={false} />

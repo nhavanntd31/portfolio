@@ -4,7 +4,7 @@ import { Blog } from '@/app/api/blog/route';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: any
 ) {
   await dbConnect();
   const req = await params;
