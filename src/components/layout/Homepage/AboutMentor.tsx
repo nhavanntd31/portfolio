@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Link } from "lucide-react";
 import BackgroundImage from "@/public/assets/images/back-1.png";
 import { Urbanist } from "next/font/google";
 import Frame2 from "@/public/assets/images/Frame2.png";
@@ -16,7 +16,7 @@ const urbanist = Urbanist({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-export const ImageCard = ({ image }: { image: any }) => (
+export const ImageCard = ({ image, linkTo }: { image: any, linkTo: string }) => (
   <div className="relative w-full">
     <Image
       src={image}
@@ -30,9 +30,9 @@ export const ImageCard = ({ image }: { image: any }) => (
         borderRadius: "12px"
       }}
     />
-    <div className="absolute text-white bottom-3 right-4 bg-[#7C9971] rounded-full p-6 hover:scale-110 hover:bg-[#95B788] transition-all duration-300 cursor-pointer hover:rotate-12">
+    <Link href={linkTo} className="absolute text-white bottom-3 right-4 bg-[#7C9971] rounded-full p-6 hover:scale-110 hover:bg-[#95B788] transition-all duration-300 cursor-pointer hover:rotate-12">
       <ArrowUpRight size={50} className="transition-transform duration-300 hover:rotate-45"/>
-    </div>
+    </Link>
   </div>
 );
 
@@ -83,9 +83,9 @@ export default function AboutMentor() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <ImageCard image={Envi} />
-            <ImageCard image={Global} />
-            <ImageCard image={Youth} />
+            <ImageCard image={Envi} linkTo="/upgreen" />
+            <ImageCard image={Global} linkTo="/global" />
+            <ImageCard image={Youth} linkTo="/education" />
           </div>
         </div>
       </section>
