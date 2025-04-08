@@ -3,7 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 import BackgroundImage from "@/public/assets/images/back-1.png";
 import { Urbanist } from "next/font/google";
 import Frame2 from "@/public/assets/images/Frame2.png";
-
+import Envi from "@/public/assets/images/homepage/envi.png";
+import Global from "@/public/assets/images/homepage/global.png";
+import Youth from "@/public/assets/images/homepage/youth.png";
+import About1 from "@/public/assets/images/homepage/about1.png";
+import About2 from "@/public/assets/images/homepage/about2.png";
+import About3 from "@/public/assets/images/homepage/about3.png";
 const urbanist = Urbanist({
   subsets: ["latin"],
   display: "swap",
@@ -11,10 +16,10 @@ const urbanist = Urbanist({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-export const ImageCard = () => (
+export const ImageCard = ({ image }: { image: any }) => (
   <div className="relative w-full">
     <Image
-      src={Frame2}
+      src={image}
       alt="Environmental App Interface"
       width={416}
       height={283}
@@ -78,9 +83,9 @@ export default function AboutMentor() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
+            <ImageCard image={Envi} />
+            <ImageCard image={Global} />
+            <ImageCard image={Youth} />
           </div>
         </div>
       </section>
@@ -89,9 +94,9 @@ export default function AboutMentor() {
           <span className="text-[#FD853A]"> Values</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-          <FocusCard title="Sustainability & Impact" image={BackgroundImage.src} description=" I design and lead innovative projects that tackle plastic waste, promote circular economy solutions, and raise environmental awareness. At UPGREEN Vietnam, we turn discarded plastic into beautiful, purposeful products – reconnecting people with cultural values while inspiring greener lifestyles." />
-          <FocusCard title="Creative Storytelling" image={BackgroundImage.src} description="I use writing, visual design, and video to tell stories that matter – stories about people, culture, and social transformation. Whether it's a campaign, a short film, or a digital post, I believe storytelling is a powerful tool to make complex issues more human, relatable, and inspiring" />
-          <FocusCard title=" Education & Mentoring" image={BackgroundImage.src} description="Through APPYSIS, online classes, and workshops, I mentor young people in applying for scholarships, launching social projects, and thinking globally. My mission is to equip youth with the mindset, tools, and confidence to shape the future they believe in." />
+          <FocusCard title="Sustainability & Impact" image={About1.src} description=" I design and lead innovative projects that tackle plastic waste, promote circular economy solutions, and raise environmental awareness. At UPGREEN Vietnam, we turn discarded plastic into beautiful, purposeful products – reconnecting people with cultural values while inspiring greener lifestyles." />
+          <FocusCard title="Creative Storytelling" image={About2.src} description="I use writing, visual design, and video to tell stories that matter – stories about people, culture, and social transformation. Whether it's a campaign, a short film, or a digital post, I believe storytelling is a powerful tool to make complex issues more human, relatable, and inspiring" />
+          <FocusCard title=" Education & Mentoring" image={About3.src} description="Through APPYSIS, online classes, and workshops, I mentor young people in applying for scholarships, launching social projects, and thinking globally. My mission is to equip youth with the mindset, tools, and confidence to shape the future they believe in." />
         </div>
       </div>
     </div>
