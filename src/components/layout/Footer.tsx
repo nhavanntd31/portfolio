@@ -2,7 +2,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
 import { Facebook, Youtube, Instagram, Twitter } from "lucide-react"
-
+import Whatsapp from "@/public/assets/svg/whatsapp.svg"
+import Image from "next/image"
 export default function Footer() {
   return (
     <footer className="bg-zinc-900 text-white py-12 px-6 mt-12 md:px-12">
@@ -35,8 +36,8 @@ export default function Footer() {
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link href="#" className="text-gray-300 hover:text-white">
-                <Twitter size={18} />
-                <span className="sr-only">Twitter</span>
+                <Image src={Whatsapp} alt="Whatsapp" className="text-white" width={22} height={22} />
+                <span className="sr-only">Whatsapp</span>
               </Link>
             </div>
           </div>

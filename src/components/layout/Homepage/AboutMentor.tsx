@@ -30,9 +30,9 @@ export const ImageCard = ({ image, linkTo }: { image: any, linkTo: string }) => 
         borderRadius: "12px"
       }}
     />
-    <Link href={linkTo} className="absolute text-white bottom-3 right-4 bg-[#7C9971] rounded-full p-6 hover:scale-110 hover:bg-[#95B788] transition-all duration-300 cursor-pointer hover:rotate-12">
+    <a href={linkTo} className="absolute text-white bottom-3 right-4 bg-[#7C9971] rounded-full p-6 hover:scale-110 hover:bg-[#95B788] transition-all duration-300 cursor-pointer hover:rotate-12">
       <ArrowUpRight size={50} className="transition-transform duration-300 hover:rotate-45"/>
-    </Link>
+    </a>
   </div>
 );
 
@@ -83,9 +83,9 @@ export default function AboutMentor() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <ImageCard image={Envi} linkTo="/upgreen" />
-            <ImageCard image={Global} linkTo="/global" />
-            <ImageCard image={Youth} linkTo="/education" />
+            <ImageCard image={Envi} linkTo="/work" />
+            <ImageCard image={Global} linkTo="/work" />
+            <ImageCard image={Youth} linkTo="/work" />
           </div>
         </div>
       </section>
