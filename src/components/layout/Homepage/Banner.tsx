@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
-import MentorImage from "@/public/assets/images/Doris2.png"
+import MentorImage from "@/public/assets/images/Doris.png"
 import { Button } from "@/components/ui/button"
 import { Urbanist } from 'next/font/google';
 
@@ -24,10 +24,10 @@ export default function Banner() {
             <span style={{ color: '#329A1F', fontSize: '95.57px' }}>I&apos;m </span>
             <span style={{ color: '#4CB5F0', fontSize: '95.57px' }}>Doris Do,</span>
             <br />
-            <span style={{ color: '#329A1F', fontSize: '40px' }} className="text-[#329A1F] font-size-2">Environmental entrepreneur and Sustainable influencer/educator</span>
+            <span style={{ color: '#329A1F', fontSize: '40px' }} className="text-[#329A1F] font-size-2">Environmental entrepreneur and Sustainable educator</span>
           </h1>
 
-          <div className="relative flex justify-center -mt-32 ">
+          <div className="relative flex justify-center -mt-1 ">
 <div className="absolute top-75 left-1/2 transform -translate-x-1/2 w-[800px] h-[1000px] bg-[#F6EDD9] rounded-t-full -z-10"></div>
             <Image
               src={MentorImage}
@@ -51,7 +51,7 @@ export default function Banner() {
 
           <div className="flex justify-center gap-2 max-w-[380px] rounded-full border-2 border-white px-2 py-2 mx-auto backdrop-blur-md backdrop-filter absolute bottom-15 left-1/2 transform -translate-x-1/2 z-20 shadow-md">
             <a
-              href="#"
+              href="/about"
               className="flex items-center gap-2 bg-[#7C9971] hover:bg-green-700 text-[#F3FCF0] px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg"
               style={{ color: '#F3FCF0', fontSize: '25.69px', fontFamily: 'Urbanist', fontWeight: '300', wordWrap: 'break-word' }}
             >
@@ -59,7 +59,7 @@ export default function Banner() {
               <ArrowRight size={32} className="-rotate-45" />
             </a>
             <a
-              href="#"
+              href="/contact"
               style={{ color: '#F3FCF0', fontSize: '25.69px', fontFamily: 'Urbanist', fontWeight: '300', wordWrap: 'break-word' }}
               className="bg-transparent hover:bg-[#4CB5F0] text-[#F3FCF0] px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg"
             >

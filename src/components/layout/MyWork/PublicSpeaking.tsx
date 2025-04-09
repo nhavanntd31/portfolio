@@ -223,10 +223,10 @@ export default function PublicSpeaking() {
             <h2
               className="text-3xl sm:text-4xl md:text-5xl font-sm mb-6 transition-all duration-300 hover:scale-105"
             >
-              <div className="flex flex-col">
+              <a href="https://xanhlenvn.com/" target="_blank" className="flex flex-col">
                 <span className="text-[#329A1F] hover:text-white transition-colors duration-300">UPGREEN</span>
                 <span className="text-blue-400 hover:text-white transition-colors duration-300">VIETNAM</span>
-              </div>
+              </a>
             </h2>
 
             <h3 className="text-2xl font-semibold text-white mb-4 hover:text-[#329A1F] transition-colors duration-300">Designing a Circular Future</h3>
@@ -275,13 +275,13 @@ export default function PublicSpeaking() {
               }}
             />
           </div>
-          <div className="rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+          <a href="https://www.facebook.com/share/1678Dn4sLy/?mibextid=wwXIfr" target="_blank" className="rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
             <img 
               src={educationProject.image} 
               alt={educationProject.title} 
               className="w-full h-full max-h-[400px] object-cover hover:opacity-90 transition-opacity duration-300"
             />
-          </div>
+          </a>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 hover:shadow-lg transition-all duration-300 p-4 rounded-xl">

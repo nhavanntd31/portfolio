@@ -17,7 +17,6 @@ const RichTextEditor = dynamic(() => import('@/components/ui/editor'), {
   ssr: false 
 })
 
-
 interface CreateBlogFormProps {
   onClose: () => void
   onCreateBlog: (blogData: any, status: "draft" | "published") => Promise<void>
@@ -150,7 +149,7 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
               <input
                 type="text"
                 placeholder="Enter blog title"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F]"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F] text-black"
                 value={newBlogTitle}
                 onChange={(e) => setNewBlogTitle(e.target.value)}
               />
@@ -162,7 +161,7 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
                 <input
                   type="text"
                   placeholder="Enter category"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F]"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F] text-black"
                   value={newBlogCategory}
                   onChange={(e) => setNewBlogCategory(e.target.value)}
                 />
@@ -171,7 +170,7 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
               <div>
                 <label className="block text-[#344054] font-medium mb-2">Type</label>
                 <select 
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F]"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F] text-black"
                   value={newBlogType}
                   onChange={(e) => setNewBlogType(e.target.value)}
                 >
@@ -189,7 +188,7 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
                 <input
                   type="text"
                   placeholder="Enter author name"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F]"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#329A1F] text-black"
                   value={newBlogAuthor}
                   onChange={(e) => setNewBlogAuthor(e.target.value)}
                 />
@@ -234,7 +233,7 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
             
             <div>
               <label className="block text-[#344054] font-medium mb-2">Content</label>
-              <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <div className="border text-black border-gray-200 rounded-xl overflow-hidden">
                 <RichTextEditor ref={editorRef} />
               </div>
             </div>
@@ -242,14 +241,14 @@ export default function CreateBlogForm({ onClose, onCreateBlog }: CreateBlogForm
             <div className="flex justify-end gap-4 mt-4">
               <Button 
                 variant="outline" 
-                className="rounded-full px-6 border-gray-200"
+                className="rounded-full px-6 text-black border-black border-2  bg-[#F3FCF0] hover:bg-[#FF9B5C] hover:text-black shadow-lg"
                 onClick={onClose}
                 disabled={isSubmitting}
               >
                 Cancel
               </Button>
               <Button 
-                className="bg-[#FD853A] hover:bg-[#FF9B5C] text-white rounded-full px-6"
+                className="bg-[#FD853A] hover:bg-[#FF9B5C] text-[#F3FCF0] rounded-full px-6"
                 onClick={() => handleSubmit("published")}
                 disabled={isSubmitting}
               >

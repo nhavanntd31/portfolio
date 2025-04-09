@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Urbanist } from "next/font/google"
 import Header from "@/components/layout/Header"
 import Image from "next/image"
-import ContactImage from "@/public/assets/images/Doris3.png"
+import ContactImage from "@/public/assets/images/contact1.png"
 import Variant from "@/public/assets/images/Variant2.png"
 import Footer from "@/components/layout/Footer"
 import { toast } from "sonner"
@@ -122,8 +122,7 @@ export default function ContactPage() {
                     <Image 
                       src={ContactImage}
                       alt="Contact Me"
-     
-                      className="relative z-10 rounded-xl"
+                      className="relative z-10 right-10 bottom-40 rounded-xl"
                     />
                     <Image 
                       src={Variant}

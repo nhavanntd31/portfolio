@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Link } from "lucide-react"
 import { Urbanist } from "next/font/google"
 import { motion, AnimatePresence } from "motion/react"
 import Arboard from "@/public/assets/images/upgreen.png"
@@ -176,9 +176,9 @@ export default function Slider() {
                   transition={{ delay: 0.3, duration: 0.4 }}
                   className="mt-12"
                 >
-                  <button className="hover:bg-[#4CB5F0] backdrop-blur-sm border border-[#4CB5F0] border-opacity-50 text-white px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg font-medium tracking-wide">
-                    Learn More
-                  </button>
+                    <a href="/work" className="hover:bg-[#4CB5F0] backdrop-blur-sm border border-[#4CB5F0] border-opacity-50 text-white px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg font-medium tracking-wide">
+                      Learn More
+                    </a>
                 </motion.div>
               </div>
             </div>

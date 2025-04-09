@@ -1,7 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import ProfileImage from "@/public/assets/images/Doris.png"
+import ProfileImage from "@/public/assets/images/Doris2.png"
 import { Urbanist } from "next/font/google"
+import Link from "next/link"
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -67,12 +68,14 @@ export default function ProfileSection() {
           </div>
 
           <div>
+            <Link href="/contact">
             <Button
               variant="outline"
-              className={`rounded-full px-12 py-8 border-[#2d3142] text-[#2d3142] hover:bg-[#2d3142] hover:text-white text-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${urbanist.className}`}
+              className={`rounded-full px-12 py-8 border-[#2d3142] text-[#2d3142] bg-white hover:bg-[#2d3142] hover:text-white text-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${urbanist.className}`}
             >
               Contact
             </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -97,7 +100,7 @@ export default function ProfileSection() {
           </div>
           <div className="border-l border-gray-300 pl-8 space-y-4">
             <p className={`text-[#344054] text-lg ${urbanist.className}`}>
-            As the founder and CFO of UPGREEN Vietnam, I lead a team that transforms plastic waste into artistic, culturally-rooted, and eco-friendly products. Through UPGREEN, I explore the potential of circular economy models to create social, environmental, and economic value.
+            As the co-founder and CFO of UPGREEN Vietnam, I lead a team that transforms plastic waste into artistic, culturally-rooted, and eco-friendly products. Through UPGREEN, I explore the potential of circular economy models to create social, environmental, and economic value.
             </p>
             <p className={`text-[#344054] text-lg ${urbanist.className}`}>
               Alongside sustainability, I'm passionate about creative storytelling – using writing, design, and digital content to spark meaningful conversations around culture, identity, and change. I believe that stories have the power to move people – and movements.

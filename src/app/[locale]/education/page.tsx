@@ -6,7 +6,7 @@ import { Urbanist } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import BlogBanner from "@/public/assets/images/education.png";
+import BlogBanner from "@/public/assets/images/yseal.png";
 import Link from "next/link";
 
 const urbanist = Urbanist({
